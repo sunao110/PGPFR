@@ -13,8 +13,7 @@ Gesture recognition is an important research area in the field of computer visio
   
 ## Dataset preparation
 
-The data preparation step is the same as what's documented in the repository of our proposed method.
-- and replace the dataset directory `root_dir` in `run_trial.sh` with your own local dataset directory
+- Replace the dataset directory `root_dir` in `run_trial.sh` with your own local dataset directory
 ```bash
 for  dataset_name  in ${datasets[*]}; do
 
