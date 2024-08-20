@@ -46,7 +46,7 @@ fi
 
 ```
 
-- Run single specific experiments by simply changing some configurations in the `run_experiments_all.sh` file. For example, run Pgpfr approach on Shrec-2017 for one trial.
+- Run single specific experiments by simply changing some configurations in the `run_experiments_all.sh` file. Running Pgpfr(ours) approach on Shrec-2017 for one trial. If you want to run other baseline experiments, you can choose the corresponding method.
 
 ```bash
 
