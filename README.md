@@ -38,11 +38,6 @@ fi
 
 ## Training
 
-Three seeds are randomly picked to run three experiments for each baseline approach.
-- You may choose to rerun the whole experiments on your own, but we store the checkpoint of initial pre-trained model for all three seeds to make a fair comparison between different approach. and the saved checkpoint can be download from https://drive.google.com/drive/folders/1gsIPd-BGXvb2zVIWRZwDZ75ejxtxcV05?usp=sharing
-	- Place the pre-trained model folder `models` under the parent directory `ogr_cmu`
-	- Skip this step if you want to run the experiments entirely
-
 - Run all experiments by one command
 
 ```
@@ -51,7 +46,7 @@ Three seeds are randomly picked to run three experiments for each baseline appro
 
 ```
 
-- Run single specific experiments by simply changing some configurations in the `run_experiments_all.sh` file. For example, run ABD approach on Shrec-2017 for one trial.
+- Run single specific experiments by simply changing some configurations in the `run_experiments_all.sh` file. For example, run Pgpfr approach on Shrec-2017 for one trial.
 
 ```bash
 
@@ -63,12 +58,12 @@ gpu=0
 
 datasets=("hgr_shrec_2017")
 
-baselines=("Oracle")
+baselines=("Pgpfr")
 
 trial_ids=(0)
 
 n_trials=${#trial_ids[@]}
 
-n_tasks=1
+n_tasks=7
 
 ```
